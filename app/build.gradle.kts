@@ -26,7 +26,9 @@ dependencies {
     // DAGGER2
     api(Libraries.Dagger2.dagger2)
     annotationProcessor(Libraries.Dagger2.dagger2AnnotationProcessor)
-    // TODO add dagger2 android stuff!
+    api(Libraries.Dagger2.dagger2Android)
+    api(Libraries.Dagger2.dagger2AndroidSupport)
+    annotationProcessor(Libraries.Dagger2.dagger2AndroidAnnotationProcessor)
 
     // ANDROIDX
     implementation(Libraries.AndroidX.appCompat)

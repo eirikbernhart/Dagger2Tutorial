@@ -52,6 +52,9 @@ object Libraries {
     object Dagger2 {
         const val dagger2 = "com.google.dagger:dagger:${Versions.dagger2}"
         const val dagger2AnnotationProcessor = "com.google.dagger:dagger-compiler:${Versions.dagger2}"
+        const val dagger2Android = "com.google.dagger:dagger-android:${Versions.dagger2}"
+        const val dagger2AndroidSupport = "com.google.dagger:dagger-android-support:${Versions.dagger2}"
+        const val dagger2AndroidAnnotationProcessor = "com.google.dagger:dagger-android-processor:${Versions.dagger2}"
     }
 }
 
