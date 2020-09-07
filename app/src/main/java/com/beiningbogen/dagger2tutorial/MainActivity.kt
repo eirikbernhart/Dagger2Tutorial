@@ -3,6 +3,7 @@ package com.beiningbogen.dagger2tutorial
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.beiningbogen.dagger2tutorial.di.DaggerCarComponent
+import com.beiningbogen.dagger2tutorial.di.DieselEngineModule
 import com.beiningbogen.dagger2tutorial.testing.car.Car
 
 class MainActivity : AppCompatActivity() {
@@ -13,9 +14,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val carComponent = DaggerCarComponent.create()
+        val component = DaggerCarComponent.builder()
+            .dieselEngineModule(DieselEngineModule(400))
+            .build()
 
-        car = carComponent.getCar()
+        car = component.getCar()
         car.drive()
     }
 }

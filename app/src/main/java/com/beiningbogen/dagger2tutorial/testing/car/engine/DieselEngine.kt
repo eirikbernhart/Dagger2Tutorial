@@ -1,11 +1,9 @@
 package com.beiningbogen.dagger2tutorial.testing.car.engine
 
-import com.beiningbogen.dagger2tutorial.testing.car.engine.Engine
 import timber.log.Timber
-import javax.inject.Inject
 
-class DieselEngine @Inject constructor() : Engine {
+class DieselEngine(private val horsePower: Int) : Engine {
     override fun start() {
-        Timber.d("Car -> Diesel engine started")
+        Timber.d("Car -> Diesel engine started. Horsepower: $horsePower")
     }
 }
