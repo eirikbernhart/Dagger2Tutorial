@@ -2,8 +2,8 @@ package com.beiningbogen.dagger2tutorial
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.beiningbogen.dagger2tutorial.di.DaggerCarComponent
 import com.beiningbogen.dagger2tutorial.testing.car.Car
-import com.beiningbogen.dagger2tutorial.testing.car.DaggerCarComponent
 
 class MainActivity : AppCompatActivity() {
 

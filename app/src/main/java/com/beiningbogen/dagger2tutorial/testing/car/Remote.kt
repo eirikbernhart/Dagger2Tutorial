@@ -6,6 +6,6 @@ import javax.inject.Inject
 class Remote @Inject constructor() {
 
     fun setListener(car: Car) {
-        Timber.d("Remote connected")
+        Timber.d("Car -> Remote connected")
     }
 }
